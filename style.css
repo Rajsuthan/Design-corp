@@ -1,0 +1,267 @@
+/* --- GLOBAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  outline: 0;
+  vertical-align: baseline;
+}
+:root {
+  --main-black: #1f202b;
+  --main-gray: #8a8ca5;
+  --light-gray: #e7e7e8;
+  --main-blue: #5952ff;
+}
+html {
+  font-family: "Nexa light", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--main-black);
+}
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--main-black);
+}
+p {
+  font-size: 17px;
+  color: var(--main-gray);
+}
+a {
+  font-size: 17px;
+  color: var(--main-gray);
+  text-decoration: none;
+}
+
+.wrapper-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.white {
+  color: rgb(236, 236, 236);
+}
+
+.r {
+  text-align: right;
+  margin-right: 300px;
+  margin-bottom: 530px;
+}
+
+.l {
+  padding-left: 100px;
+}
+
+.sp-project {
+  color: var(--main-black);
+}
+
+/* --- NAV --- */
+nav {
+  position: fixed;
+  top: 25px;
+  left: 5%;
+  line-height: 50px;
+  width: 100%;
+}
+
+nav a {
+  font-weight: 500;
+  color: var(--main-black);
+}
+
+.nav-right {
+  position: fixed;
+  right: 5%;
+  top: 25px;
+}
+
+.nav-right a > img {
+  vertical-align: text-bottom;
+}
+
+.nav-right a:first-child {
+  color: var(--main-blue);
+  margin-right: 60px;
+}
+
+.rec {
+  background-color: var(--main-blue);
+  display: inline-block;
+  width: 7px;
+  height: 14px;
+  margin-right: 3px;
+}
+
+/* --- CONTENT --- */
+.landing,
+.section2 {
+  margin-top: 50px;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  margin-top: 130px;
+  position: relative;
+}
+
+.right {
+  flex: 1;
+  position: relative;
+}
+
+.right p {
+  max-width: 500px;
+}
+
+.left p {
+  max-width: 500px;
+}
+
+.skills {
+  float: right;
+}
+
+.skill-box {
+  background: white;
+  margin: 30px -100px;
+  text-align: center;
+  width: 370px;
+  height: 120px;
+  line-height: 120px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(75, 79, 124, 0.219);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(75, 79, 124, 0.219);
+  box-shadow: 0px 5px 20px 0px rgba(75, 79, 124, 0.219);
+}
+
+.rec-large {
+  background-color: var(--main-blue);
+  height: 150px;
+  width: 600px;
+  position: absolute;
+  top: -45px;
+  left: -80px;
+  z-index: -1;
+}
+
+.line {
+  height: 3px;
+  width: 120px;
+  background-color: var(--main-black);
+  position: absolute;
+  top: 30px;
+  left: -140px;
+}
+
+.line2 {
+  height: 3px;
+  width: 120px;
+  background-color: var(--main-black);
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
+
+.rec-large-2 {
+  background-color: var(--main-blue);
+  height: 260px;
+  width: 1000px;
+  position: absolute;
+  top: -142px;
+  left: -472px;
+  z-index: -1;
+}
+
+.arrow {
+  position: absolute;
+  right: -250px;
+  top: -140px;
+}
+
+/* --- BACKGROUND LINES --- */
+.lines {
+  display: block;
+  width: 1px;
+  height: 100vh;
+  background-color: var(--light-gray);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  z-index: -2;
+}
+
+.right-line-1 {
+  transform: translateX(200px);
+  -webkit-transform: translateX(200px);
+}
+.right-line-2 {
+  transform: translateX(400px);
+  -webkit-transform: translateX(400px);
+}
+.right-line-3 {
+  transform: translateX(600px);
+  -webkit-transform: translateX(600px);
+}
+
+.center-line {
+  transform: translateX(0px);
+  -webkit-transform: translateX(-0px);
+}
+
+.left-line-1 {
+  transform: translateX(-200px);
+  -webkit-transform: translateX(-200px);
+}
+.left-line-2 {
+  transform: translateX(-400px);
+  -webkit-transform: translateX(-400px);
+}
+.left-line-3 {
+  transform: translateX(-600px);
+  -webkit-transform: translateX(-600px);
+}
+/* --- FOOTER --- */
+footer {
+  position: fixed;
+  bottom: 50px;
+  right: 5%;
+}
+
+.social {
+  position: fixed;
+  left: 5%;
+}
+
+.social > a {
+  margin-right: 60px;
+}
+
+footer > p,
+.social > a {
+  font-weight: 500;
+}
+
+/* --- MOTION --- */
+.delay-1 {
+  animation-delay: 0.1s;
+}
+.delay-2 {
+  animation-delay: 0.3s;
+}
+.delay-3 {
+  animation-delay: 0.5s;
+}
+.delay-4 {
+  animation-delay: 0.7s;
+}
